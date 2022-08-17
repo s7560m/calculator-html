@@ -1,0 +1,149 @@
+<html>
+  <head>
+      <title>My first calculator!</title>
+      <link rel="stylesheet" href="calculator-style.css" />
+  </head>
+  <body>
+    <div class="row result">
+      <p id="result-number">0</p>
+    </div>
+    <div class="row">
+      <div class="button">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="lightgrey"></circle>
+        </svg>
+        <p class="button-number modifier" id="AC-button" onclick="clearInput()">AC</p>
+      </div>
+
+
+      <div class="button">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="lightgrey"></circle>
+        </svg>
+        <p class="button-number modifier" id="plusorminus-button">+/-</p>
+      </div>
+      <div class="button">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="lightgrey"></circle>
+        </svg>
+        <p class="button-number modifier" id="percent-button">%</p>
+      </div>
+
+      <!-- Division operator -->
+      <div class="button" onclick="callOperation('/')">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="darkorange"></circle>
+        </svg>
+        <p class="button-number">/</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="button" id="button-1" onclick="inputNumber(1)">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="dimgrey"></circle>
+        </svg>
+        <p class="button-number">1</p>
+      </div>
+      <div class="button" id="button-2" onclick="inputNumber(2)">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="dimgrey"></circle>
+        </svg>
+        <p class="button-number">2</p>
+      </div>
+      <div class="button" id="button-3" onclick="inputNumber(3)">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="dimgrey"></circle>
+        </svg>
+        <p class="button-number">3</p>
+      </div>
+
+      <!-- Multiplication operator -->
+      <div class="button" onclick="callOperation('*')">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="darkorange"></circle>
+        </svg>
+        <p class="button-number">X</p>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="button" id="button-4" onclick="inputNumber(4)">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="dimgrey"></circle>
+        </svg>
+        <p class="button-number">4</p>
+      </div>
+      <div class="button" id="button-5" onclick="inputNumber(5)">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="dimgrey"></circle>
+        </svg>
+        <p class="button-number">5</p>
+      </div>
+      <div class="button" id="button-6" onclick="inputNumber(6)">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="dimgrey"></circle>
+        </svg>
+        <p class="button-number">6</p>
+      </div>
+
+      <!-- Subtraction operator -->
+      <div class="button" onclick="callOperation('-')">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="darkorange"></circle>
+        </svg>
+        <p class="button-number">-</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="button" id="button-7" onclick="inputNumber(7)">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="dimgrey"></circle>
+        </svg>
+        <p class="button-number">7</p>
+      </div>
+      <div class="button" id="button-8" onclick="inputNumber(8)">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="dimgrey"></circle>
+        </svg>
+        <p class="button-number">8</p>
+      </div>
+      <div class="button" id="button-9" onclick="inputNumber(9)">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="dimgrey"></circle>
+        </svg>
+        <p class="button-number">9</p>
+      </div>
+
+      <!-- Addition operator -->
+      <div class="button" onclick="callOperation('+')">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="darkorange"></circle>
+        </svg>
+        <p class="button-number">+</p>
+      </div>
+    </div>
+    <div class="row">
+      <div id="zero-button" onclick="inputNumber(0)">
+        <svg height="100" width="200">
+          <circle cx="50" cy="50" r="40" fill="dimgrey"></circle>
+          <rect x="50" y="10" width="95" height="80" fill="dimgrey" />
+          <circle cx="145" cy="50" r="40" fill="dimgrey"></circle>
+        </svg>
+        <p class="button-number" id="number-zero">0</p>
+      </div>
+      <div class="button">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="dimgrey"></circle>
+        </svg>
+        <p class="button-number">.</p>
+      </div>
+      <div class="button">
+        <svg height="100" width="100">
+          <circle cx="50" cy="50" r="40" fill="darkorange"></circle>
+        </svg>
+        <p class="button-number">=</p>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>

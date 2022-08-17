@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+}
+
+/* button number that's displayed within the button (circle) */
+.button-number {
+    color: white;
+    font-size: 36px;
+    position: relative;
+    bottom: 105px;
+    left: 40px;
+    width: 0px;
+    font-family: sans-serif;
+}
+
+.modifier {
+    color: black;
+}
+
+.button {
+    height: 100px;
+    width: 90px;
+    display: inline-block;
+}
+
+/* every row of the calculator */
+.row {
+    height: 100px;
+    display: block;
+}
+
+.result {
+    width: 370px;
+}
+
+#result-number {
+    height: 0px;
+    color: white;
+    float: right;
+    font-size: 80px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 70px;
+    right: 10px;
+}
+
+#zero-button {
+    width: 185px;
+    display: inline-block;
+    position: relative;
+}
+
+#AC-button {
+    left: 25px;
+    height: 30px;
+}
+
+#plusorminus-button {
+    left: 27px;
+}
+#percent-button {
+    left: 33px;
+}
